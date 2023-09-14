@@ -4,6 +4,7 @@ NB: we cannot provide the full data used as it is property of Zoopla. If data is
 additional information regarding code usage is provided in the commit messages of the files
 
 for csv as not in geopandas format need the following code (adapted to csv file used)
+
 current df format and need to be transformed to geopandas format to get the accurate epsg 4326 coordinates. 
 The necessary code for this transformation is:
 import pandas as pd
