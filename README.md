@@ -7,6 +7,7 @@ for csv as not in geopandas format need the following code (adapted to csv file 
 
 current df format and need to be transformed to geopandas format to get the accurate epsg 4326 coordinates. 
 The necessary code for this transformation is:
+
 import pandas as pd
 import geopandas as gpd
 LSOA_gdf = pd.read_csv('Boundaries_raw_LSOA.csv')
