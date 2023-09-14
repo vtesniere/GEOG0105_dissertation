@@ -17,4 +17,4 @@ LSOA_gdf['geometry'] = gpd.GeoSeries.from_wkt(LSOA_gdf['geometry'])
 LSOA_gdf = gpd.GeoDataFrame(LSOA_gdf, geometry='geometry')
 LSOA_gdf = LSOA_gdf.set_crs("EPSG:4326")
 
-For historicql data, the same zero-shot prodecure, functions and data formatting were used, with only the data changing
+For historical data, the same zero-shot prodecure, functions and data formatting were used, with only the data changing
