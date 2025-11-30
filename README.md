@@ -10,11 +10,13 @@ for csv as not in geopandas format need the following code (adapted to csv file 
 current df format and need to be transformed to geopandas format to get the accurate epsg 4326 coordinates. 
 The necessary code for this transformation is:
 
+```
 import pandas as pd
 import geopandas as gpd
 LSOA_gdf = pd.read_csv('Boundaries_raw_LSOA.csv')
 LSOA_gdf['geometry'] = gpd.GeoSeries.from_wkt(LSOA_gdf['geometry'])
 LSOA_gdf = gpd.GeoDataFrame(LSOA_gdf, geometry='geometry')
 LSOA_gdf = LSOA_gdf.set_crs("EPSG:4326")
+```
 
 For historical data, the same zero-shot prodecure, functions and data formatting were used, with only the data changing
